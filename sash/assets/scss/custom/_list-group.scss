@@ -363,7 +363,7 @@
     line-height: 30px;
 }
 
-list-style6 ul {
+.list-style6 ul {
     list-style: decimal;
     padding-left: 30px;
 }
@@ -375,3 +375,19 @@ list-style6 ul {
 .list-group-item a{
     color: $default-color;
 }
+
+// // SPX TRADING LIST
+// .list-spx-trading{
+//     display: inline-flex;
+//     flex-wrap: wrap;
+
+//     li:not(:last-child){
+//         border-right: 1px solid $white-1;
+//     }
+
+//     @media (max-width: 1440px){
+//         .list-item-icon{
+//             display: none;
+//         }
+//     }
+// }

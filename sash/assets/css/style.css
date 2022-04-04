@@ -46705,7 +46705,7 @@ img {
     line-height: 30px;
 }
 
-list-style6 ul {
+.list-style6 ul {
     list-style: decimal;
     padding-left: 30px;
 }
@@ -58316,6 +58316,12 @@ body.rtl {
 
     .app.sidebar-mini.sidenav-toggled .side-menu__item {
         padding: 10px 30px;
+    }
+
+    .app.sidebar-mini.sidenav-toggled:not(.sidenav-toggled-open) .author-avatar {
+        position: absolute;
+        left: -50%;
+        transform: translateX(calc(-50% + 8px));
     }
 
     .sidebar-mini.sidenav-toggled .app-sidebar__user .avatar-md {
@@ -72097,7 +72103,7 @@ textarea.form-control {
 
 .spx-area.sticky.stickyClass {
     position: sticky;
-    top: 65px;
+    top: 50px;
     -webkit-animation-name: header_animation;
     animation-name: header_animation;
     -webkit-animation-duration: 0.4s;

@@ -1,6 +1,25 @@
 (function($) {
     "use strict";
 
+    
+	var scroller = $('[avs-scroll]');
+    if (scroller.length) {
+		scroller.each(function () {
+			var ScrollBar = $(this),
+            // Slides SpaceBetween
+			ScrollBarBoth = ScrollBar.data('both'),
+			ScrollBarX = ScrollBar.data('x'),
+			ScrollBarY = ScrollBar.data('y');
+            
+            const ps = new PerfectScrollbar(scroller, {
+                useBothWheelAxes: (ScrollBarBoth ? ScrollBarBoth : true),
+                suppressScrollX: (ScrollBarX ? ScrollBarX : true),
+                suppressScrollY: (ScrollBarY ? ScrollBarY : false),
+            });
+
+        })
+    };
+
     const ps = new PerfectScrollbar('.app-sidebar', {
         useBothWheelAxes: true,
         suppressScrollX: true,

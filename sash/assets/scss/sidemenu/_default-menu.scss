@@ -554,6 +554,15 @@
         .side-menu__item {
             padding: 10px 30px;
         }
+
+
+        &:not(.sidenav-toggled-open){
+            .author-avatar{
+                position: absolute;
+                left: -50%;
+                transform: translateX(calc(-50% + 8px));
+            }
+        }
     }
     .sidebar-mini.sidenav-toggled .app-sidebar__user .avatar-md {
         margin: 0 auto;
