@@ -72096,6 +72096,16 @@ textarea.form-control {
 }
 
 /* ######## CUSTOM-SECTIONS ######## */
+@media (max-width: 1440px) {
+    .list-spx-trading .list-item-icon {
+        display: none;
+    }
+}
+
+.spx-panel-tabs li a.active {
+    border-left: 2px solid var(--primary-bg-color) !important;
+}
+
 .spx-area.sticky {
     z-index: 3;
     background: #f0f0f5;

@@ -1,9 +1,9 @@
-// // TABLE
-// .spx-expected-table{
-//     position: relative;
+.list-spx-trading .list-item-icon{
+    @media (max-width: 1440px) {
+        display: none;
+    }
+}
 
-//     .table-responsive{
-//         max-height: 250px;
-//         overflow-x: hidden;
-//     }
-// }
+.spx-panel-tabs li a.active{
+    border-left: 2px solid $primary-1 !important; 
+}
