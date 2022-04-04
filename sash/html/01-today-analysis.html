@@ -37,10 +37,6 @@
 
 <body class="app sidebar-mini ltr light-mode">
 
-    <!-- EXTRA -->
-    <div class="header-dropdown-list"></div>
-
-
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
         <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
@@ -648,305 +644,239 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12 panel panel-primary">
-                                <div class="tab-menu-heading">
-                                    <div class="tabs-menu">
-                                        <!-- Tabs -->
-                                        <ul class="row nav panel-tabs spx-panel-tabs panel-primary">
-                                            <!-- Single Tab -->
-                                            <li class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                                                <a href="#tab--today-analytics" data-bs-toggle="tab" class="active card p-0 overflow-hidden">
-                                                    <div class="card-body">
-                                                        <div class="d-flex gap-3 align-items-center">
-                                                            <div class="icon-area text-primary">
-                                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                                            </div>
-                                                            <div class="item-content">
-                                                                <h2 class="mb-1 text-primary fw-semibold">Today</h2>
-                                                                <h5 class="mb-0">Analytics</h5>
-                                                            </div>
-                                                        </div>
+                            <!-- Single Tab -->
+                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                                <a href="./01-today-analysis.html" class="border-start border-primary card p-0 overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="icon-area text-primary">
+                                                <img src="https://via.placeholder.com/100" width="40" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <h2 class="mb-1 text-primary fw-semibold">Today</h2>
+                                                <h5 class="mb-0">Analytics</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Single Tab -->
+                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                                <a href="#tab--month-analytics" data-bs-toggle="tab" class="card p-0 overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="icon-area text-primary">
+                                                <img src="https://via.placeholder.com/100" width="40" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <h2 class="mb-1 text-primary fw-semibold">Month</h2>
+                                                <h5 class="mb-0">Analytics</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Single Tab -->
+                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                                <a href="#tab--back-test" data-bs-toggle="tab" class="card p-0 overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="icon-area text-primary">
+                                                <img src="https://via.placeholder.com/100" width="40" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <h2 class="mb-1 text-primary fw-semibold">Back</h2>
+                                                <h5 class="mb-0">Test</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Single Tab -->
+                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                                <a href="#tab--coming-soon" data-bs-toggle="tab" class="card p-0 overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="icon-area text-primary">
+                                                <img src="https://via.placeholder.com/100" width="40" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <h2 class="mb-1 text-primary fw-semibold">Coming</h2>
+                                                <h5 class="mb-0">soon(trading journal)</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-heading mb-5">
+                                    <h2 class="mb-1 text-primary fw-semibold">Today Analysis</h2>
+                                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-3 col-lg-4">                    
+                                <div class="card overflow-hidden">
+                                    <div class="card-header">
+                                        <h3 class="card-title fw-semibold text-primary">Today Start</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="candle-image text-center">
+                                            <img src="../assets/images/custom/candle_green.png" width="120" alt="">
+
+                                            <div class="candle-content mb-3">
+                                                <h6 class="mb-1 text-primary">Type</h6>
+                                                <h3 class="mb-1 text-primary fw-bold text-uppercase">Short</h3>
+                                                <p class="text-muted">Valore di Apertura della sessione del mercato</p>
+                                            </div>
+
+                                            <!-- ROW -->
+                                            <div class="row text-primary">
+                                                <!-- Single Column -->
+                                                <div class="col-6">
+                                                    <div class="single-item">
+                                                        <h5 class="mb-1 text-uppercase">Take Profit</h5>
+                                                        <h3 class="mb-2 number-font">4153.29</h2>
+                                                        <p class="text-muted">(+6.25 punti (0,6%)</p>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <!-- Single Tab -->
-                                            <li class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                                                <a href="#tab--month-analytics" data-bs-toggle="tab" class="card p-0 overflow-hidden">
-                                                    <div class="card-body">
-                                                        <div class="d-flex gap-3 align-items-center">
-                                                            <div class="icon-area text-primary">
-                                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                                            </div>
-                                                            <div class="item-content">
-                                                                <h2 class="mb-1 text-primary fw-semibold">Month</h2>
-                                                                <h5 class="mb-0">Analytics</h5>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                                <!-- Single Column -->
+                                                <div class="col-6">
+                                                    <div class="single-item">
+                                                        <h5 class="mb-1 text-uppercase">Stop Loss</h5>
+                                                        <h3 class="mb-2 number-font">4184.63</h3>
+                                                        <p class="text-muted">(+6.25 punti (0,6%)</p>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <!-- Single Tab -->
-                                            <li class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                                                <a href="#tab--back-test" data-bs-toggle="tab" class="card p-0 overflow-hidden">
-                                                    <div class="card-body">
-                                                        <div class="d-flex gap-3 align-items-center">
-                                                            <div class="icon-area text-primary">
-                                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                                            </div>
-                                                            <div class="item-content">
-                                                                <h2 class="mb-1 text-primary fw-semibold">Back</h2>
-                                                                <h5 class="mb-0">Test</h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- Single Tab -->
-                                            <li class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                                                <a href="#tab--coming-soon" data-bs-toggle="tab" class="card p-0 overflow-hidden">
-                                                    <div class="card-body">
-                                                        <div class="d-flex gap-3 align-items-center">
-                                                            <div class="icon-area text-primary">
-                                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                                            </div>
-                                                            <div class="item-content">
-                                                                <h2 class="mb-1 text-primary fw-semibold">Coming</h2>
-                                                                <h5 class="mb-0">soon(trading journal)</h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="panel-body tabs-menu-body">
-                                    <div class="tab-content">
-                                        <!-- TODAY ANALYTICS -->
-                                        <div class="tab-pane active" id="tab--today-analytics">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="section-heading mb-5">
-                                                        <h2 class="mb-1 text-primary fw-semibold">Today Analysis</h2>
-                                                        <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xxl-3 col-lg-4">                    
-                                                    <div class="card overflow-hidden">
-                                                        <div class="card-header">
-                                                            <h3 class="card-title fw-semibold text-primary">Today Start</h3>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="candle-image text-center">
-                                                                <img src="../assets/images/custom/candle_green.png" width="120" alt="">
-
-                                                                <div class="candle-content mb-3">
-                                                                    <h6 class="mb-1 text-primary">Type</h6>
-                                                                    <h3 class="mb-1 text-primary fw-bold text-uppercase">Short</h3>
-                                                                    <p class="text-muted">Valore di Apertura della sessione del mercato</p>
-                                                                </div>
-
-                                                                <!-- ROW -->
-                                                                <div class="row text-primary">
-                                                                    <!-- Single Column -->
-                                                                    <div class="col-6">
-                                                                        <div class="single-item">
-                                                                            <h5 class="mb-1 text-uppercase">Take Profit</h5>
-                                                                            <h3 class="mb-2 number-font">4153.29</h2>
-                                                                            <p class="text-muted">(+6.25 punti (0,6%)</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- Single Column -->
-                                                                    <div class="col-6">
-                                                                        <div class="single-item">
-                                                                            <h5 class="mb-1 text-uppercase">Stop Loss</h5>
-                                                                            <h3 class="mb-2 number-font">4184.63</h3>
-                                                                            <p class="text-muted">(+6.25 punti (0,6%)</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-9 col-lg-8">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h3 class="card-title fw-semibold text-primary">Today Start</h3>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="d-flex mx-auto text-center justify-content-center mb-4">
-                                                                <div class="d-flex text-center justify-content-center me-3"><span
-                                                                        class="dot-label bg-primary my-auto"></span>Total Sales</div>
-                                                                <div class="d-flex text-center justify-content-center"><span
-                                                                        class="dot-label bg-secondary my-auto"></span>Total Orders</div>
-                                                            </div>
-                                                            <div class="chartjs-wrapper-demo">
-                                                                <canvas id="today_analysis_transactions" class="chart-dropshadow"></canvas>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xxl-3 col-lg-4">    
-                                                    <div class="card overflow-hidden text-center text-primary">
-                                                        <div class="card-header">
-                                                            <h3 class="card-title fw-semibold">Actual Expected Value</h3>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <h4><span class="fw-bold">4,034.11</span> <small class="d-block">Minimum</small></h4>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <h4><span class="fw-bold">4,235.11</span> <small class="d-block">Maximum</small></h4>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="table-responsive" avs-scroll style="height: 350px;">
-                                                                        <table class="table text-nowrap text-md-nowrap mb-0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>
-                                                                                        <h4><span class="text-uppercase text-primary fw-bold">Bellow</span> <small class="d-block">Opening</small></h4>
-                                                                                    </th>
-                                                                                    <th>Step</th>
-                                                                                    <th>
-                                                                                        <h4><span class="text-uppercase text-primary fw-bold">Above</span> <small class="d-block">Opening</small></h4>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>1</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>2</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>3</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>4</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>5</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>6</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>7</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>8</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>9</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="text-danger">-0.51%</td>
-                                                                                    <td>10</td>
-                                                                                    <td class="text-success">+0.34%</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-9 col-lg-8">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h3 class="card-title">line chart</h3>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div id="morrisBar2" class="chartsh"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </div>
+                            <div class="col-xxl-9 col-lg-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title fw-semibold text-primary">Today Start</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex mx-auto text-center justify-content-center mb-4">
+                                            <div class="d-flex text-center justify-content-center me-3"><span
+                                                    class="dot-label bg-primary my-auto"></span>Total Sales</div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                    class="dot-label bg-secondary my-auto"></span>Total Orders</div>
                                         </div>
-                                        <div class="tab-pane" id="tab--month-analytics">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="section-heading mb-5">
-                                                        <h2 class="mb-1 text-primary fw-semibold">Monthly Analysis <small>March 2022</small></h2>
-                                                        <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            <div class="chartjs-wrapper-demo">
-                                                                <canvas id="today_analysis_transactions" class="chart-dropshadow"></canvas>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <p> default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
-                                                humour and the like</p>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
-                                        </div>
-                                        <div class="tab-pane" id="tab--back-test">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="section-heading mb-5">
-                                                        <h2 class="mb-1 text-primary fw-semibold">BackTest <small>15 Years</small></h2>
-                                                        <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <p>over the years, sometimes by accident, sometimes on purpose (injected humour and the like</p>
-                                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab--coming-soon">
-                                            <p>page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
-                                                by accident, sometimes on purpose (injected humour and the like</p>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+                                        <div class="chartjs-wrapper-demo">
+                                            <canvas id="today_analysis_transactions" class="chart-dropshadow"></canvas>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-xxl-3 col-lg-4">    
+                                <div class="card overflow-hidden text-center text-primary">
+                                    <div class="card-header">
+                                        <h3 class="card-title fw-semibold">Actual Expected Value</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4><span class="fw-bold">4,034.11</span> <small class="d-block">Minimum</small></h4>
+                                            </div>
+                                            <div class="col-6">
+                                                <h4><span class="fw-bold">4,235.11</span> <small class="d-block">Maximum</small></h4>
+                                            </div>
+                                        </div>
 
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="table-responsive" avs-scroll style="height: 350px;">
+                                                    <table class="table text-nowrap text-md-nowrap mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <h4><span class="text-uppercase text-primary fw-bold">Bellow</span> <small class="d-block">Opening</small></h4>
+                                                                </th>
+                                                                <th>Step</th>
+                                                                <th>
+                                                                    <h4><span class="text-uppercase text-primary fw-bold">Above</span> <small class="d-block">Opening</small></h4>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>1</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>2</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>3</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>4</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>5</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>6</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>7</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>8</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>9</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-danger">-0.51%</td>
+                                                                <td>10</td>
+                                                                <td class="text-success">+0.34%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-9 col-lg-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">line chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="morrisBar2" class="chartsh"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- CONTAINER END -->
                 </div>
