@@ -162,6 +162,7 @@ License        :   Licensed under ThemeForest License
 /*Transparent variables*/
 /* ###### Bootstrap ###### */
 :root {
+    --primary-bg-light: #F6DDBE;
     --primary-bg-color: #4D2A1B;
     --primary-bg-hover: #391D15;
     --primary-bg-border: #5B3D36;
@@ -47953,6 +47954,10 @@ ul.timeline>li:before {
     margin-top: 3px;
 }
 
+.bg-primary-light {
+    background-color: var(--primary-bg-light) !important;
+}
+
 /* ######## LAYOUT-STYLES ######## */
 .footer {
     background: transparent;
@@ -72096,12 +72101,6 @@ textarea.form-control {
 }
 
 /* ######## CUSTOM-SECTIONS ######## */
-@media (max-width: 1440px) {
-    .list-spx-trading .list-item-icon {
-        display: none;
-    }
-}
-
 .spx-panel-tabs li a.active {
     border-left: 2px solid var(--primary-bg-color) !important;
 }
@@ -72122,6 +72121,10 @@ textarea.form-control {
     animation-iteration-count: 1;
     -webkit-animation-delay: false;
     animation-delay: false;
+}
+
+.spx-area.sticky.stickyClass .list-item-icon {
+    display: none;
 }
 
 .spx-area+.jumps-prevent {
