@@ -10,7 +10,7 @@
     <meta name="description" content="SerieStrategy">
     <meta name="author" content="Series Statistics Fractal Trading">
     <meta name="keywords"
-        content="trading,Statistics, Fractal,admin panel,series, Cash ,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
+        content="trading,Statistics, Fractal,admin panel,series">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon_s.ico" />
@@ -36,11 +36,108 @@
         .card.sticky.stickyClass{
             margin-top: 80px;
         }
+        .app-header.header.stickyClass .d-flex{
+            height:30px;
+        }
+        .app-header.header.stickyClass .nav-link.icon {
+            margin: 2px;
+            padding: 8px;
+        }
         .sticky_pig{
             position: sticky;
-            top: 80px;
+            top: 100px;
             z-index: 1;
         }
+        .sticky_pig.stickyClass{
+            top: 70px;
+        }
+        .stickyClass .nav-link.icon i{
+            font-size: 17px;
+        }
+        /*.sidebar-mini .app-sidebar {
+         width: 170px !important;
+        }
+        .side-header{
+            width: 169px !important;
+            height: 75px;
+            border: 0 !important;
+        }
+        .sidebar-mini .side-menu {
+            margin-top: 40px;
+        }
+        .app-content {
+             margin-left: 170px;
+        }
+        .app-header {
+            padding-left: 190px;
+            background-color: #f0f0f5e8;
+            filter: blur(2px);
+         }*/
+         .side-header {
+             border-bottom: 0px;
+        }
+         .avatar .bg-green {
+            border: 2px solid #fff;
+         }
+         
+         .card.card-brown{/* classe inserita da me per cambiare colore*/
+            background-color: #5c3c37;
+            border:1px solid #381a14 !important;
+            box-shadow: 0 14px 26px -12px rgba(92,60,55,.42),0 4px 23px 0px rgba(0,0,0,.12),0 8px 10px -5px rgba(92,60,55,.2);
+            border-radius: 16px;
+            
+         }
+        /*cambiando i colori primari sarà per tutte le sezioni*/
+        #back-to-top {
+            background: #49241b;
+        }
+        .custom-switch-input:checked ~ .custom-switch-indicator {
+            background: #49241b;
+        }
+        .side-menu .side-menu__icon {
+            color: #49241b;/*cambiando i colori primari sarà per tutte le icone*/
+         }
+         
+         body {
+            background-color: #F2F2F2 !important;
+            font-family: "montserrat", sans-serif !important;
+         }
+         .card{
+            border: 1px solid #e5e5e5 !important;
+         }
+         .sidebar .tab-menu-heading {
+            background: #fff;
+             color: #999;
+        }
+        .sidebar-right .nav.panel-tabs li a{
+            font-size: 12px;
+        }
+        .sidebar-right{
+            width: 360px;
+            padding: 19px;
+        }
+        .sidebar-right .card{
+            border: 0px !important ;
+        }
+        .app.sidebar-mini.sidenav-toggled .side-menu__icon ,
+        .header-right-icons .nav-link.icon {
+            color: #5C3C37;
+        }
+        #global-loader {
+            background: #5c3c37;
+        }
+        .loader-img {
+           color: #381a14 !important;
+        }
+        .notification .notification-body {
+            margin-left: 28% !important;
+            margin-right: -6% !important;
+            background: #f2f2f2;
+        }
+        .bg-secondary {
+            background: #f07b4d !important;
+        }
+        
     </style>
 </head>
 
@@ -48,7 +145,7 @@
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
-        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+        <img src="../assets/images/bars.svg" class="loader-img" alt="Loader">
     </div>
     <!-- /GLOBAL-LOADER -->
 
@@ -69,7 +166,8 @@
                         </a>
                         <!-- LOGO -->
                         <div class="main-header-center ms-3 d-none d-lg-block">
-                           mettere il titolo quii
+                           <h5 class="h5 mb-2">Continuos Day Trading</h5>
+                           <h7 class="text-muted">with 4 starting cases</h7>
                         </div>
                         <div class="d-flex order-lg-2 ms-auto header-right-icons">
                             <div class="dropdown d-none">
@@ -281,35 +379,6 @@
                                                 <i class="fe fe-align-right"></i>
                                             </a>
                                         </div>
-                                        <!-- SIDE-MENU -->
-                                        <div class="dropdown d-flex profile-1">
-                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
-                                                <img src="../assets/images/users/21.jpg" alt="profile-user"
-                                                    class="avatar  profile-user brround cover-image">
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                <div class="drop-heading">
-                                                    <div class="text-center">
-                                                        <h5 class="text-dark mb-0 fs-14 fw-semibold">Percy Kewshun</h5>
-                                                        <small class="text-muted">Senior Admin</small>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <a class="dropdown-item" href="profile.html">
-                                                    <i class="dropdown-icon fe fe-user"></i> Profile
-                                                </a>
-                                                <a class="dropdown-item" href="email-inbox.html">
-                                                    <i class="dropdown-icon fe fe-mail"></i> Inbox
-                                                    <span class="badge bg-danger rounded-pill float-end">5</span>
-                                                </a>
-                                                <a class="dropdown-item" href="lockscreen.html">
-                                                    <i class="dropdown-icon fe fe-lock"></i> Lockscreen
-                                                </a>
-                                                <a class="dropdown-item" href="login.html">
-                                                    <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +410,7 @@
                             </svg></div>
                         <ul class="side-menu">
                             <li class="sub-category">
-                                <h3>Main</h3>
+                                <h3>Start</h3>
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="index.html"><i
@@ -349,299 +418,137 @@
                                         class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="sub-category">
-                                <h3>UI Kit</h3>
+                                <h3>Strategy</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-slack"></i><span
-                                        class="side-menu__label">Apps</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Apps</a></li>
-                                    <li><a href="cards.html" class="slide-item"> Cards design</a></li>
-                                    <li><a href="calendar.html" class="slide-item"> Default calendar</a></li>
-                                    <li><a href="calendar2.html" class="slide-item"> Full calendar</a></li>
-                                    <li><a href="chat.html" class="slide-item"> Chat</a></li>
-                                    <li><a href="notify.html" class="slide-item"> Notifications</a></li>
-                                    <li><a href="sweetalert.html" class="slide-item"> Sweet alerts</a></li>
-                                    <li><a href="rangeslider.html" class="slide-item"> Range slider</a></li>
-                                    <li><a href="scroll.html" class="slide-item"> Content Scroll bar</a></li>
-                                    <li><a href="loaders.html" class="slide-item"> Loaders</a></li>
-                                    <li><a href="counters.html" class="slide-item"> Counters</a></li>
-                                    <li><a href="rating.html" class="slide-item"> Rating</a></li>
-                                    <li><a href="timeline.html" class="slide-item"> Timeline</a></li>
-                                    <li><a href="treeview.html" class="slide-item"> Treeview</a></li>
-                                    <li><a href="chart.html" class="slide-item"> Charts</a></li>
-                                    <li><a href="footers.html" class="slide-item"> Footers</a></li>
-                                    <li><a href="users-list.html" class="slide-item"> User List</a></li>
-                                    <li><a href="search.html" class="slide-item">Search</a></li>
-                                    <li><a href="crypto-currencies.html" class="slide-item"> Crypto-currencies</a></li>
-                                </ul>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="index.html"><i
+                                        class="side-menu__icon fe fe-git-pull-request"></i><span
+                                        class="side-menu__label">CDT4</span></a>
                             </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-package"></i><span
-                                        class="side-menu__label">Bootstrap</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Bootstrap</a></li>
-                                    <li><a href="alerts.html" class="slide-item"> Alerts</a></li>
-                                    <li><a href="buttons.html" class="slide-item"> Buttons</a></li>
-                                    <li><a href="colors.html" class="slide-item"> Colors</a></li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Avatars</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a href="avatarsquare.html" class="sub-slide-item"> Avatar-Square</a>
-                                            </li>
-                                            <li><a href="avatar-round.html" class="sub-slide-item"> Avatar-Rounded</a>
-                                            </li>
-                                            <li><a href="avatar-radius.html" class="sub-slide-item"> Avatar-Radius</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="dropdown.html" class="slide-item"> Drop downs</a></li>
-                                    <li><a href="listgroup.html" class="slide-item"> List Group</a></li>
-                                    <li><a href="tags.html" class="slide-item"> Tags</a></li>
-                                    <li><a href="pagination.html" class="slide-item"> Pagination</a></li>
-                                    <li><a href="navigation.html" class="slide-item"> Navigation</a></li>
-                                    <li><a href="typography.html" class="slide-item"> Typography</a></li>
-                                    <li><a href="breadcrumbs.html" class="slide-item"> Breadcrumbs</a></li>
-                                    <li><a href="badge.html" class="slide-item"> Badges / Pills</a></li>
-                                    <li><a href="panels.html" class="slide-item"> Panels</a></li>
-                                    <li><a href="thumbnails.html" class="slide-item"> Thumbnails</a></li>
-                                    <li><a href="offcanvas.html" class="slide-item"> Offcanvas</a></li>
-                                    <li><a href="toast.html" class="slide-item"> Toast</a></li>
-                                    <li><a href="scrollspy.html" class="slide-item"> Scrollspy</a></li>
-                                    <li><a href="mediaobject.html" class="slide-item"> Media Object</a></li>
-                                    <li><a href="accordion.html" class="slide-item"> Accordions</a></li>
-                                    <li><a href="tabs.html" class="slide-item"> Tabs</a></li>
-                                    <li><a href="modal.html" class="slide-item"> Modal</a></li>
-                                    <li><a href="tooltipandpopover.html" class="slide-item"> Tooltip and popover</a>
-                                    </li>
-                                    <li><a href="progress.html" class="slide-item"> Progress</a></li>
-                                    <li><a href="carousel.html" class="slide-item"> Carousels</a></li>
-                                </ul>
-                            </li>
+                            
                             <li class="sub-category">
-                                <h3>Pre-build Pages</h3>
+                                <h3>Admin</h3>
                             </li>
+                            
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-layers"></i><span
-                                        class="side-menu__label">Pages</span><i
+                                        class="side-menu__icon fe fe-codepen"></i><span
+                                        class="side-menu__label">Serie Static<br> Platform</span><i
                                         class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Pages</a></li>
-                                    <li><a href="profile.html" class="slide-item"> Profile</a></li>
-                                    <li><a href="editprofile.html" class="slide-item"> Edit Profile</a></li>
-                                    <li><a href="notify-list.html" class="slide-item"> Notifications List</a></li>
-                                    <li><a href="email-compose.html" class="slide-item"> Mail-Compose</a></li>
-                                    <li><a href="email-inbox.html" class="slide-item"> Mail-Inbox</a></li>
-                                    <li><a href="email-read.html" class="slide-item"> Mail-Read</a></li>
-                                    <li><a href="gallery.html" class="slide-item"> Gallery</a></li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Forms</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a href="form-elements.html" class="sub-slide-item"> Form Elements</a>
-                                            </li>
-                                            <li><a href="form-layouts.html" class="sub-slide-item"> Form Layouts</a>
-                                            </li>
-                                            <li><a href="form-advanced.html" class="sub-slide-item"> Form Advanced</a>
-                                            </li>
-                                            <li><a href="form-editor.html" class="sub-slide-item"> Form Editor</a></li>
-                                            <li><a href="form-wizard.html" class="sub-slide-item"> Form Wizard</a></li>
-                                            <li><a href="form-validation.html" class="sub-slide-item"> Form
-                                                    Validation</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Tables</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a href="tables.html" class="sub-slide-item">Default table</a></li>
-                                            <li><a href="datatable.html" class="sub-slide-item"> Data Tables</a></li>
-                                            <li><a href="edit-table.html" class="sub-slide-item"> Edit Tables</a></li>
-                                            <li><a href="extension-tables.html" class="sub-slide-item"> Extension Tables</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Extension</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a href="about.html" class="sub-slide-item"> About Company</a></li>
-                                            <li><a href="services.html" class="sub-slide-item"> Services</a></li>
-                                            <li><a href="faq.html" class="sub-slide-item"> FAQS</a></li>
-                                            <li><a href="terms.html" class="sub-slide-item"> Terms</a></li>
-                                            <li><a href="invoice.html" class="sub-slide-item"> Invoice</a></li>
-                                            <li><a href="pricing.html" class="sub-slide-item"> Pricing Tables</a></li>
-                                            <li><a href="settings.html" class="sub-slide-item"> Settings</a></li>
-                                            <li><a href="blog.html" class="sub-slide-item"> Blog</a></li>
-                                            <li><a href="blog-details.html" class="sub-slide-item"> Blog Details</a>
-                                            </li>
-                                            <li><a href="blog-post.html" class="sub-slide-item"> Blog Post</a></li>
-                                            <li><a href="empty.html" class="sub-slide-item"> Empty Page</a></li>
-                                            <li><a href="construction.html" class="sub-slide-item"> Under
-                                                    Construction</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="switcher-1.html" class="slide-item"> Switcher</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">S. Static Platform</a></li>
+                                    <li><a href="#" class="slide-item"> Calc Result</a></li>
+                                    <li><a href="#" class="slide-item"> Analizer</a></li>
+                                    <li><a href="#" class="slide-item"> Baktest calculator</a></li>
+                                    <li><a href="#" class="slide-item"> Studies</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                    class="side-menu__icon fe fe-calendar"></i><span
+                                    class="side-menu__label">AdminData</span><i
+                                    class="angle fe fe-chevron-right"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">AdminData</a></li>
+                                    <li><a href="#" class="slide-item"> Result</a></li>
+                                    <li><a href="#" class="slide-item"> Market</a></li>
+                                    <li><a href="#" class="slide-item"> Hourly Data Series</a></li>
+                                    <li><a href="#" class="slide-item"> Data Series</a></li>
                                 </ul>
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-shopping-bag"></i><span
-                                        class="side-menu__label">E-Commerce</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
+                                    class="side-menu__icon fe fe-check-circle"></i><span
+                                    class="side-menu__label">AdminChecks</span><i
+                                    class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">E-Commerce</a></li>
-                                    <li><a href="shop.html" class="slide-item"> Shop</a></li>
-                                    <li><a href="shop-description.html" class="slide-item"> Product Details</a></li>
-                                    <li><a href="cart.html" class="slide-item"> Shopping Cart</a></li>
-                                    <li><a href="add-product.html" class="slide-item"> Add Product</a></li>
-                                    <li><a href="wishlist.html" class="slide-item"> Wishlist</a></li>
-                                    <li><a href="checkout.html" class="slide-item"> Checkout</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">AdminChecks</a></li>
+                                    <li><a href="#" class="slide-item"> checkUpdate DayData</a></li>
+                                    <li><a href="#" class="slide-item"> CheckUpdate TIME data</a></li>
+                                    <li><a href="#" class="slide-item"> Calculate result like CRON</a></li>
+                                    <li><a href="#" class="slide-item"> Backtest view module</a></li>
+                                    <li><a href="#" class="slide-item"> Check times</a></li>
+                                    <li><a href="#" class="slide-item"> Clean double dates</a></li>
+                                    <li><a href="#" class="slide-item"> Calc prev day values</a></li>
+                                    <li><a href="#" class="slide-item"> Historical chart</a></li>
+                                    <li><a href="#" class="slide-item"> DataTest</a></li>
                                 </ul>
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">File
-                                        Manager</span><span class="badge bg-pink side-badge">4</span><i
+                                    class="side-menu__icon fe fe-sliders"></i><span
+                                    class="side-menu__label">Admin</span><i
+                                    class="angle fe fe-chevron-right"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Admin</a></li>
+                                    <li><a href="#" class="slide-item"> User</a></li>
+                                    <li><a href="#" class="slide-item"> Role</a></li>
+                                    <li><a href="#" class="slide-item"> Permission</a></li>
+                                    <li><a href="#" class="slide-item"> Menu</a></li>
+                                    <li><a href="#" class="slide-item"> Operation log</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-help-circle"></i><span class="side-menu__label">
+                                            Helpers
+                                        </span><span class="badge bg-secondary side-badge">4</span><i
                                         class="angle fe fe-chevron-right hor-angle"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">File Manager</a></li>
-                                    <li><a href="file-manager.html" class="slide-item"> File Manager</a></li>
-                                    <li><a href="filemanager-list.html" class="slide-item"> File Manager List</a></li>
-                                    <li><a href="filemanager-details.html" class="slide-item"> File Details</a></li>
-                                    <li><a href="file-attachments.html" class="slide-item"> File Attachments</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-category">
-                                <h3>Misc Pages</h3>
-                            </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-users"></i><span
-                                        class="side-menu__label">Authentication</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Authentication</a></li>
-                                    <li><a href="login.html" class="slide-item"> Login</a></li>
-                                    <li><a href="register.html" class="slide-item"> Register</a></li>
-                                    <li><a href="forgot-password.html" class="slide-item"> Forgot Password</a></li>
-                                    <li><a href="lockscreen.html" class="slide-item"> Lock screen</a></li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Error Pages</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a href="400.html" class="sub-slide-item"> 400</a></li>
-                                            <li><a href="401.html" class="sub-slide-item"> 401</a></li>
-                                            <li><a href="403.html" class="sub-slide-item"> 403</a></li>
-                                            <li><a href="404.html" class="sub-slide-item"> 404</a></li>
-                                            <li><a href="500.html" class="sub-slide-item"> 500</a></li>
-                                            <li><a href="503.html" class="sub-slide-item"> 503</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Helpers</a></li>
+                                    <li><a href="#" class="slide-item"> Scaffold</a></li>
+                                    <li><a href="#" class="slide-item"> Database Terminal</a></li>
+                                    <li><a href="#" class="slide-item"> Laravel Artisan</a></li>
+                                    <li><a href="#" class="slide-item"> Routers</a></li>
                                 </ul>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
-                                    <i class="side-menu__icon fe fe-cpu"></i>
-                                    <span class="side-menu__label">Submenu items</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Submenu items</a></li>
-                                    <li><a href="javascript:void(0)" class="slide-item">Submenu-1</a></li>
-                                    <li class="sub-slide">
-                                        <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
-                                                class="sub-side-menu__label">Submenu-2</span><i
-                                                class="sub-angle fe fe-chevron-right"></i></a>
-                                        <ul class="sub-slide-menu">
-                                            <li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.1</a></li>
-                                            <li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.2</a></li>
-                                            <li class="sub-slide2">
-                                                <a class="sub-side-menu__item2" href="javascript:void(0)"
-                                                    data-bs-toggle="sub-slide2"><span
-                                                        class="sub-side-menu__label2">Submenu-2.3</span><i
-                                                        class="sub-angle2 fe fe-chevron-right"></i></a>
-                                                <ul class="sub-slide-menu2">
-                                                    <li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.1</a></li>
-                                                    <li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.2</a></li>
-                                                    <li><a href="javascript:void(0)" class="sub-slide-item2">Submenu-2.3.3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.4</a></li>
-                                            <li><a class="sub-slide-item" href="javascript:void(0)">Submenu-2.5</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="sub-category">
-                                <h3>General</h3>
-                            </li>
-                            <li>
-                                <a class="side-menu__item" href="widgets.html"><i
-                                        class="side-menu__icon fe fe-grid"></i><span
-                                        class="side-menu__label">Widgets</span></a>
-                            </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-map-pin"></i><span
-                                        class="side-menu__label">Maps</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Maps</a></li>
-                                    <li><a href="maps1.html" class="slide-item">Leaflet Maps</a></li>
-                                    <li><a href="maps2.html" class="slide-item">Mapel Maps</a></li>
-                                    <li><a href="maps.html" class="slide-item">Vector Maps</a></li>
-                                </ul>
-                            </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-bar-chart-2"></i><span
-                                        class="side-menu__label">Charts</span><span
-                                        class="badge bg-secondary side-badge">6</span><i
-                                        class="angle fe fe-chevron-right hor-angle"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Charts</a></li>
-                                    <li><a href="chart-chartist.html" class="slide-item">Chart Js</a></li>
-                                    <li><a href="chart-flot.html" class="slide-item"> Flot Charts</a></li>
-                                    <li><a href="chart-echart.html" class="slide-item"> ECharts</a></li>
-                                    <li><a href="chart-morris.html" class="slide-item"> Morris Charts</a></li>
-                                    <li><a href="chart-nvd3.html" class="slide-item"> Nvd3 Charts</a></li>
-                                    <li><a href="charts.html" class="slide-item"> C3 Bar Charts</a></li>
-                                    <li><a href="chart-line.html" class="slide-item"> C3 Line Charts</a></li>
-                                    <li><a href="chart-donut.html" class="slide-item"> C3 Donut Charts</a></li>
-                                    <li><a href="chart-pie.html" class="slide-item"> C3 Pie charts</a></li>
-                                </ul>
-                            </li>
-                            <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-wind"></i><span
-                                        class="side-menu__label">Icons</span><i
-                                        class="angle fe fe-chevron-right"></i></a>
-                                <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Icons</a></li>
-                                    <li><a href="icons.html" class="slide-item"> Font Awesome</a></li>
-                                    <li><a href="icons2.html" class="slide-item"> Material Design Icons</a></li>
-                                    <li><a href="icons3.html" class="slide-item"> Simple Line Icons</a></li>
-                                    <li><a href="icons4.html" class="slide-item"> Feather Icons</a></li>
-                                    <li><a href="icons5.html" class="slide-item"> Ionic Icons</a></li>
-                                    <li><a href="icons6.html" class="slide-item"> Flag Icons</a></li>
-                                    <li><a href="icons7.html" class="slide-item"> pe7 Icons</a></li>
-                                    <li><a href="icons8.html" class="slide-item"> Themify Icons</a></li>
-                                    <li><a href="icons9.html" class="slide-item">Typicons Icons</a></li>
-                                    <li><a href="icons10.html" class="slide-item">Weather Icons</a></li>
-                                    <li><a href="icons11.html" class="slide-item">Bootstrap Icons</a></li>
-                                </ul>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="index.html"><i
+                                        class="side-menu__icon fe fe-pie-chart"></i><span
+                                        class="side-menu__label">Exception Reporter</span></a>
                             </li>
                         </ul>
+                        
+                        <div class="row">
+                            <div id="circle" class="mt-3 mb-3 chart-dropshadow-secondary"><canvas width="70" height="70"></canvas></div>
+                            <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/images/users/11.jpg" style="background: rgba(0, 0, 0, 0) url(&quot;../assets/images/users/11.jpg&quot;) repeat scroll center center;">
+                                <span class="badge rounded-pill avatar-badges bg-green fs-10">&nbsp</span>
+                            </span>
+
+                             <!-- SIDE-MENU -->
+                             <div class="dropdown d-flex profile-1">
+                                <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
+                                    <img src="../assets/images/users/21.jpg" alt="profile-user"
+                                        class="avatar  profile-user brround cover-image">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                    <div class="drop-heading">
+                                        <div class="text-center">
+                                            <h5 class="text-dark mb-0 fs-14 fw-semibold">Percy Kewshun</h5>
+                                            <small class="text-muted">Senior Admin</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dropdown-item" href="profile.html">
+                                        <i class="dropdown-icon fe fe-user"></i> Profile
+                                    </a>
+                                    <a class="dropdown-item" href="email-inbox.html">
+                                        <i class="dropdown-icon fe fe-mail"></i> Inbox
+                                        <span class="badge bg-danger rounded-pill float-end">5</span>
+                                    </a>
+                                    <a class="dropdown-item" href="lockscreen.html">
+                                        <i class="dropdown-icon fe fe-lock"></i> Lockscreen
+                                    </a>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
@@ -657,131 +564,466 @@
 
                     <!-- CONTAINER -->
                     <div class="main-container container-fluid">
-                        <!-- CONTAINER sticky for exchange header block -->
-                        <div style="min-height: 1000px;">
+                     
 
-                            <!--Exchange Header block -->
-                                <div class="row sticky sticky_pig">
-                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-9">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                hey sono un cazzo di sticky, ma non stò funzionando dio porco
+                                <!--Exchange Header block -->
+                                <div class="sticky sticky_pig text-white">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="card card-brown">
+                                                <div class="card-body">
+
+                                                    <!-- exchange detail-->
+                                                    <div class="row ">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
+                                                            <div class="row">
+                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class="">
+                                                                            SPX - Standard & Poor 500 [S&P 500]
+                                                                            <h3 class="h3 mb-2 text-white">4.189,82€</h3>
+                                                                            <h5 class="text-muted text-white">+20,67 (0,50%) <i class="fa fa-caret-up text-success"></i>
+                                                                                <span>12% increase</span></h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xl-8">
+                                                            <div class="row">
+                                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class=""><!--card-body-->
+                                                                            <div class="d-flex">
+                                                                                <div class="mt-2">
+                                                                                    <h6 class="">Trading Session</h6>
+                                                                                    <h5 class="mb-0 number-font">-1h 44m</h5>
+                                                                                    <h5 class="mb-0 number-font">10 Sec</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class="">
+                                                                            <div class="d-flex">
+                                                                                <div class="mt-2">
+                                                                                    <h6 class="">Local Time</h6>
+                                                                                    <h5 class="mb-0 number-font">15 FEB monday</h5>
+                                                                                    <h5 class="mb-0 number-font">10:19 pm</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class="">
+                                                                            <div class="d-flex">
+                                                                                <div class="mt-2">
+                                                                                    <h6 class="">exchange time</h6>
+                                                                                    <h5 class="mb-0 number-font">CLOSED</h5>
+                                                                                    <h5 class="mb-0 number-font">10:24:31</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class="">
+                                                                            <div class="d-flex">
+                                                                                <div class="mt-2">
+                                                                                    <h6 class="">profit/loss (P/L)</h6>
+                                                                                    <h5 class="mb-0 number-font">98 punti(cash)</h5>
+                                                                                    <h5 class="mb-0 number-font">...</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+                                                                    <div class=" overflow-hidden"><!--card -->
+                                                                        <div class="">
+                                                                            <div class="d-flex">
+                                                                                <div class="mt-2">
+                                                                                    <h6 class="">trade</h6>
+                                                                                    <h5 class="mb-0 number-font">Finished / active</h5>
+                                                                                    <h5 class="mb-0 number-font">....</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- exchange detail END -->
+
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            <!-- Exchange Header block close -->
+                                <!-- Exchange Header block sticky_pig close -->
 
                             <!-- PAGE-HEADER inizio contenuto-->
                             <div class="page-header">
-                                <h1 class="page-title">Dashboard 01</h1>
+                                
+
+
+                                <h1 class="page-title">SPX-cdt4 Strategy<br>with 4 starting cases(subtitle)</h1><br>
+                                <div class="row">
+                                    <div class="dropdown  d-flex notifications">
+                                        <a class="nav-link icon" data-bs-toggle="dropdown" aria-expanded="true"><i class="fe fe-info"></i><span class=" pulse"></span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" data-bs-popper="none">
+                                            <div class="drop-heading border-bottom">
+                                                <div class="d-flex">
+                                                    <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Dettagli Info SPX
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="notifications-menu ps">
+                                                <a class="dropdown-item d-flex" href="notify-list.html">
+                                                    <div class="me-3 notifyimg  bg-primary brround box-shadow-primary">
+                                                        <i class="pe-7s-help1"></i>
+                                                    </div>
+                                                    <div class="mt-1 wd-80p">
+                                                        <h5 class="notification-label mb-1">Non sò cosa ci deve essere dentro
+                                                        </h5>
+                                                        <span class="notification-subtext">quali informazioni mettiamo?</span>
+                                                    </div>
+                                                </a>
+                                            
+                                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a href="notify-list.html" class="dropdown-item text-center p-3 text-muted">Clicca per maggiori informazioni</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <label class="custom-switch form-switch">
+                                        <input type="radio" name="custom-switch-radio1" class="custom-switch-input" checked="">
+                                        <span class="custom-switch-indicator custom-switch-indicator-md"></span>
+                                        <span class="custom-switch-description">Follow it</span>
+                                    </label>
+
+
+
                                 <div>
-                                    <ol class="breadcrumb">qui inserire altre cose
-                                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Dashboard 01</li>
+                                    <ol class="breadcrumb">
+                                        <div class="form-group">
+                                            
+                                        </div>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">SPX-cdt4 Strategy</li>
                                     </ol>
                                 </div>
                             </div>
                             <!-- PAGE-HEADER END -->
-                            <!-- ROW-1 -->
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
+                    
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-header pb-0 border-bottom-0">
+                                                <h3 class="card-title">Continuos Day Trading with 4 starting cases on SPX Standard & Poor 500</h3>
+                                                <div class="card-options">
+                                                    Icon?
+                                                </div>
+                                            </div>
+                                            <div class="card-body pt-0">
+                                                <br>
+                                                Questo Metodo di analisi restituisce la migliore accoppiata di Stop Loss e Take Profit (calcolato statisticamente) per ogni singolo   giorno di trading. La sua forza si sviluppa nel tempo e questo gli da la caratteristica di un tipo di operatività continuativa (ogni giorno 5-10 min).	
+                                            Inoltre le caratteristiche principali di questo Metodo sono due: il momento in cui viene calcolato il risultato (di fatto il valore di apertura* della sessione di mercato)  in relazione della chiusura del giorno precedente. 
+                                           
+                                               
+                                                <div class="float-start">
                                                     <div class="mt-2">
-                                                        <h6 class="">Total Users</h6>
-                                                        <h2 class="mb-0 number-font">44,278</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="saleschart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
-                                                <span class="text-muted fs-12"><span class="text-secondary"><i
-                                                            class="fe fe-arrow-up-circle  text-secondary"></i> 5%</span>
-                                                    Last week</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Total Profit</h6>
-                                                        <h2 class="mb-0 number-font">67,987</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="leadschart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="text-muted fs-12"><span class="text-pink"><i
-                                                            class="fe fe-arrow-down-circle text-pink"></i> 0.75%</span>
-                                                    Last 6 days</span>
-                                            </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="h4 mb-2">How Work</h4>
+                                            <h5 class="text-muted">read more</h5>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Total Expenses</h6>
-                                                        <h2 class="mb-0 number-font">$76,965</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="profitchart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
+                                </div>
+                            </div>
+
+                            <!--Tab Menù section-->
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="mt-2">
+                                                            <h2 class="mb-0 number-font">Today</h2>
+                                                            <h6 class="">Analysis</h6>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <div class="chart-wrapper mt-1">
+                                                                <canvas id="saleschart"
+                                                                    class="h-8 w-9 chart-dropshadow"></canvas>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <span class="text-muted fs-12"><span class="text-green"><i
-                                                            class="fe fe-arrow-up-circle text-green"></i> 0.9%</span>
-                                                    Last 9 days</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Total Cost</h6>
-                                                        <h2 class="mb-0 number-font">$59,765</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="costchart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="mt-2">
+                                                            <h2 class="mb-0 number-font">Month</h2>
+                                                            <h6 class="">Analysis</h6>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <div class="chart-wrapper mt-1">
+                                                                <canvas id="leadschart"
+                                                                    class="h-8 w-9 chart-dropshadow"></canvas>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <span class="text-muted fs-12"><span class="text-warning"><i
-                                                            class="fe fe-arrow-up-circle text-warning"></i> 0.6%</span>
-                                                    Last year</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="mt-2">
+                                                            
+                                                            <h2 class="mb-0 number-font">BackTest</h2>
+                                                            <h6 class="">Analysis</h6>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <div class="chart-wrapper mt-1">
+                                                                <canvas id="profitchart"
+                                                                    class="h-8 w-9 chart-dropshadow"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="mt-2">
+                                                            
+                                                            <h2 class="mb-0 number-font">Cooming</h2>
+                                                            <h6 class="">Soon (trading journal)</h6>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <div class="chart-wrapper mt-1">
+                                                                <canvas id="costchart"
+                                                                    class="h-8 w-9 chart-dropshadow"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ROW-1 END -->
-                        </div>
 
+                            <!--metto i tab provvissori -->
+                            <div class="row">
+                                <div class="panel panel-primary">
+                                    <div class="tab-menu-heading">
+                                        <div class="tabs-menu">
+                                            <!-- Tabs -->
+                                            <ul class="nav panel-tabs">
+                                                <li><a href="#tab1" class="active" data-bs-toggle="tab">Today Analysis</a></li>
+                                                <li><a href="#tab2" data-bs-toggle="tab" class="">Month Analysis</a></li>
+                                                <li><a href="#tab3" data-bs-toggle="tab" class="">BackTest</a></li>
+                                                <li><a href="#tab4" data-bs-toggle="tab" class="">CoominSoon</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body tabs-menu-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="tab1">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <h3 class="h3 mb-2">Today Analysis</h3>
+                                                        <h5 class="text-muted"> Daily price analysis of the financial markets </h5>
 
+                                                        <!-- TODAY ANALYSIS -->
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                                <div class="card overflow-hidden">
+                                                                    <div class="card-header">
+                                                                        <h3 class="card-title">Today Start</h3>
+                                                                    </div>
+                                                                    <div class="card-body text-center">
+                                                                        <img src="../assets/images/media/candle_green.png" height="45%">
+                                                                        <h6 class="mt-4 mb-2">type</h6>
+                                                                        <h2 class="mb-2 number-font">SHORT</h2>
+                                                                        <p class="text-muted">Valore di Apertura della sessione del mercato</p>
+                                                                        <div class="card-widget">
+                                                                            <p class="mb-0 pt-5">TAKE PROFIT<span class="float-end">4153.29 (+6.25 punti (0,6%)</span></p>
+                                                                            <p class="mb-0 pt-5">STOP LOSS<span class="float-end">4153.29 (+6.25 punti (0,6%)</span></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                                                <div class="card">
+                                                                    <div class="card-header">
+                                                                        <h3 class="card-title">Sales Analytics</h3>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="d-flex mx-auto text-center justify-content-center mb-4">
+                                                                            <div class="d-flex text-center justify-content-center me-3"><span
+                                                                                    class="dot-label bg-primary my-auto"></span>Total Sales</div>
+                                                                            <div class="d-flex text-center justify-content-center"><span
+                                                                                    class="dot-label bg-secondary my-auto"></span>Total Orders</div>
+                                                                        </div>
+                                                                        <div class="chartjs-wrapper-demo">
+                                                                            <canvas id="transactions" class="chart-dropshadow"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                        <!-- TODAY ANALYSIS END -->
 
-                        
-                    
+                                                    </div>
+                                                    <!-- Actual Expected value  e grafico istruttivo -->
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                            <div class="card overflow-hidden">
+                                                                <div class="card-body pb-0 bg-recentorder">
+                                                                    <h3 class="card-title text-white">Actual Expected value</h3>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="d-flex mb-4 mt-3">
+                                                                        <div
+                                                                            class="avatar avatar-md bg-secondary-transparent text-secondary bradius me-3">
+                                                                            <i class="fe fe-check"></i>
+                                                                        </div>
+                                                                        <div class="">
+                                                                            <h6 class="mb-1 fw-semibold">Delivered Orders</h6>
+                                                                            <p class="fw-normal fs-12"> <span class="text-success">3.5%</span>
+                                                                                increased </p>
+                                                                        </div>
+                                                                        <div class=" ms-auto my-auto">
+                                                                            <p class="fw-bold fs-20"> 1,768 </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex">
+                                                                        <div class="avatar  avatar-md bg-pink-transparent text-pink bradius me-3">
+                                                                            <i class="fe fe-x"></i>
+                                                                        </div>
+                                                                        <div class="">
+                                                                            <h6 class="mb-1 fw-semibold">Cancelled Orders</h6>
+                                                                            <p class="fw-normal fs-12"> <span class="text-success">1.2%</span>
+                                                                                increased </p>
+                                                                        </div>
+                                                                        <div class=" ms-auto my-auto">
+                                                                            <p class="fw-bold fs-20 mb-0"> 3,675 </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <h3 class="card-title">Grafico Istruttivo</h3>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="d-flex mx-auto text-center justify-content-center mb-4">
+                                                                        <div class="d-flex text-center justify-content-center me-3"><span
+                                                                                class="dot-label bg-primary my-auto"></span>Total Sales</div>
+                                                                        <div class="d-flex text-center justify-content-center"><span
+                                                                                class="dot-label bg-secondary my-auto"></span>Total Orders</div>
+                                                                    </div>
+                                                                    <div class="chartjs-wrapper-demo">
+                                                                        <canvas id="transactions" class="chart-dropshadow"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- COL END -->
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            <div class="tab-pane" id="tab2">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="card">
+                                                        <div class="card-header">
+                                                            <h3 class="card-title">Line Chart</h3>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="chart-container"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                                <canvas id="chartLine" class="h-275 chartjs-render-monitor" style="display: block; width: 729px; height: 275px;" width="729" height="275"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title">IF TODAY OPEN ABOVE YESTERDAY CLOSE</h3><br>
+                                                                <h6>Miglior performance secondo i casi. risultato estratto dall’accoppiata dei 2 risultati </H6>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="panel panel-primary">
+                                                                    Compare with custom Stop Loss and Take Profit <button class="btn btn-warning" data-bs-container="body" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-placement="bottom" data-bs-popover-color="default" data-bs-toggle="popover" title="" data-bs-original-title="Popover bottom" aria-describedby="popover170470">Click me</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <h3 class="card-title">IF TODAY OPEN BELOWE YESTERDAY CLOSE</h3>
+                                                                <H4>Miglior performance secondo i casi. risultato estratto dall’accoppiata dei 2 risultati </H4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="panel panel-primary">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab3">
+                                                <p>over the years, sometimes by accident, sometimes on purpose (injected humour and the like</p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+                                            </div>
+                                            <div class="tab-pane active" id="tab4">
+                                                <p>page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+                                                    by accident, sometimes on purpose (injected humour and the like</p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            
+                            
+                            
                         
                     </div>
                     <!-- CONTAINER END -->
@@ -792,488 +1034,301 @@
         </div>
 
         <!-- Sidebar-right -->
+        
         <div class="sidebar sidebar-right sidebar-animate">
             <div class="panel panel-primary card mb-0 shadow-none border-0">
                 <div class="tab-menu-heading border-0 d-flex p-3">
-                    <div class="card-title mb-0"><i class="fe fe-bell me-2"></i><span
-                            class=" pulse"></span>Notifications</div>
+                    <div class="card-title mb-0">Activity</div>
                     <div class="card-options ms-auto">
                         <a href="javascript:void(0);" class="sidebar-icon text-end float-end me-3 mb-1"
                             data-bs-toggle="sidebar-right" data-target=".sidebar-right"><i
-                                class="fe fe-x text-white"></i></a>
+                                class="fe fe-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
                     <div class="tabs-menu border-bottom">
                         <!-- Tabs -->
                         <ul class="nav panel-tabs">
-                            <li class=""><a href="#side1" class="active" data-bs-toggle="tab"><i
-                                        class="fe fe-settings me-1"></i>Feeds</a></li>
-                            <li><a href="#side2" data-bs-toggle="tab"><i class="fe fe-message-circle"></i> Chat</a></li>
-                            <li><a href="#side3" data-bs-toggle="tab"><i class="fe fe-anchor me-1"></i>Timeline</a></li>
+                            <li class=""><a href="#side1" class="active" data-bs-toggle="tab">How Work</a></li>
+                            <li><a href="#side2" data-bs-toggle="tab">DailySteps</a></li>
+                            <li><a href="#side3" data-bs-toggle="tab">Video</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane active" id="side1">
-                            <div class="p-3 fw-semibold ps-5">Feeds</div>
+                            <div class="p-3 fw-semibold ps-5">qui andranno i contenuti informativi</div>
                             <div class="card-body pt-2">
-                                <div class="browser-stats">
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span class="feeds avatar-circle brround bg-primary-transparent"><i
-                                                    class="fe fe-user text-primary"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">New user registered</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-secondary brround bg-secondary-transparent"><i
-                                                    class="fe fe-shopping-cart text-secondary"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">New order delivered</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-danger brround bg-danger-transparent"><i
-                                                    class="fe fe-bell text-danger"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">You have pending tasks</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-warning brround bg-warning-transparent"><i
-                                                    class="fe fe-gitlab text-warning"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">New version arrived</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-pink brround bg-pink-transparent"><i
-                                                    class="fe fe-database text-pink"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">Server #1 overloaded</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-info brround bg-info-transparent"><i
-                                                    class="fe fe-check-circle text-info"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">New project launched</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                    <a href="javascript:void(0)"><i class="fe fe-x"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-3 fw-semibold ps-5">Settings</div>
-                            <div class="card-body pt-2">
-                                <div class="browser-stats">
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span class="feeds avatar-circle brround bg-primary-transparent"><i
-                                                    class="fe fe-settings text-primary"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">General Settings</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-secondary brround bg-secondary-transparent"><i
-                                                    class="fe fe-map-pin text-secondary"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">Map Settings</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-danger brround bg-danger-transparent"><i
-                                                    class="fe fe-headphones text-danger"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">Support Settings</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-warning brround bg-warning-transparent"><i
-                                                    class="fe fe-credit-card text-warning"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">Payment Settings</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-2 mb-sm-0 mb-3">
-                                            <span
-                                                class="feeds avatar-circle avatar-circle-pink brround bg-pink-transparent"><i
-                                                    class="fe fe-bell text-pink"></i></span>
-                                        </div>
-                                        <div class="col-sm-10 ps-sm-0">
-                                            <div class="d-flex align-items-end justify-content-between ms-2">
-                                                <h6 class="">Notification Settings</h6>
-                                                <div>
-                                                    <a href="javascript:void(0)"><i class="fe fe-settings me-1"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                Questo Metodo di analisi restituisce la migliore accoppiata di Stop Loss e Take Profit (calcolato statisticamente) per ogni singolo   giorno di trading. La sua forza si sviluppa nel tempo e questo gli da la caratteristica di un tipo di operatività continuativa (ogni giorno 5-10 min).	
+                                Inoltre le caratteristiche principali di questo Metodo sono due: il momento in cui viene calcolato il risultato (di fatto il valore di apertura* della sessione di mercato)  in relazione della chiusura del giorno precedente. 
+
+                                Se applicata a valori posteriori di apertura, i risultati dei calcoli potrebbero variare anche sensibilmente. Inoltre l'algoritmo restituisce  un analisi in tempo reale dei valori massimi e minimi attesi di giornata, questi valori sono calcolati sempre su base puramente statistica e sono utili per capire quante probaibilità ci sono che si arrivi a certi livelli di prezzo.
                             </div>
                         </div>
                         <div class="tab-pane" id="side2">
-                            <div class="list-group list-group-flush">
-                                <div class="pt-3 fw-semibold ps-5">Today</div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/2.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Addie Minstra</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available.... </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/11.jpg"><span
-                                                class="avatar-status bg-success"></span></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Rose Bush</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/10.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Claude Strophobia</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/13.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Eileen Dover</div>
-                                            <p class="mb-0 fs-12 text-muted"> New product Launching... </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/12.jpg"><span
-                                                class="avatar-status bg-success"></span></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Willie Findit</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/15.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Manny Jah</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/4.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Cherry Blossom</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available....</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="pt-3 fw-semibold ps-5">Yesterday</div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/7.jpg"><span
-                                                class="avatar-status bg-success"></span></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Simon Sais</div>
-                                            <p class="mb-0 fs-12 text-muted">Schedule Realease...... </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/9.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Laura Biding</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/2.jpg"><span
-                                                class="avatar-status bg-success"></span></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Addie Minstra</div>
-                                            <p class="mb-0 fs-12 text-muted">Contact me for details....</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/9.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Ivan Notheridiya</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/14.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Dulcie Veeta</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/11.jpg"></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Florinda Carasco</div>
-                                            <p class="mb-0 fs-12 text-muted">New product Launching...</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="list-group-item d-flex align-items-center">
-                                    <div class="me-2">
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="../assets/images/users/4.jpg"><span
-                                                class="avatar-status bg-success"></span></span>
-                                    </div>
-                                    <div class="">
-                                        <a href="chat.html">
-                                            <div class="fw-semibold text-dark" data-bs-toggle="modal"
-                                                data-target="#chatmodel">Cherry Blossom</div>
-                                            <p class="mb-0 fs-12 text-muted">cherryblossom@gmail.com</p>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="p-3 fw-semibold ps-5">DailySteps</div>
+                            <div class="card-body pt-2">
+                                <ul class="notification">
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">Today</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">Today</span>
+                                            <span class="time ms-2">02:31</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Analisi</p>
+                                                        <p class="mb-0 fs-13 text-dark">controlla takeprofit</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">Yesterday</span>
+                                            <span class="time">18:47</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">Yesterday</span>
+                                            <span class="time ms-2">18:47</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md offline">
+                                                    <span class="avatar avatar-md bradius bg-pink me-3">ED</span>
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Eileen Dover</p>
+                                                        <p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">18:47</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">Yesterday</span>
+                                            <span class="time">06:43</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">Yesterday</span>
+                                            <span class="time ms-2">06:43</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md online">
+                                                    <img alt="avatar" class="br-7" src="../assets/images/users/2.jpg">
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Elida Distefa<span class="badge bg-success ms-3 px-2 pb-1 mb-1">New Deal</span></p>
+                                                        <p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">06:43</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">23 Oct</span>
+                                            <span class="time">03:15</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">23 Oct</span>
+                                            <span class="time ms-2">03:15</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md online">
+                                                    <img alt="avatar" class="br-7" src="../assets/images/users/12.jpg">
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Harvey Mattos</p>
+                                                        <p class="mb-0 fs-13 text-dark">Mentioned you in a post.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">03:15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">15 Oct</span>
+                                            <span class="time">12:14</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">15 Oct</span>
+                                            <span class="time ms-2">12:14</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md offline">
+                                                    <span class="avatar avatar-md bradius me-3 bg-primary">IH</span>
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Catrice Doshier</p>
+                                                        <p class="mb-0 fs-13 text-dark">2 Members Accepted your Request.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">12:14</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">30 Sep</span>
+                                            <span class="time">14:04</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">30 Sep</span>
+                                            <span class="time ms-2">14:04</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md offline">
+                                                    <img alt="avatar" class="br-7" src="../assets/images/users/13.jpg">
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Mercy Ritia<span class="badge bg-danger ms-3 px-2 pb-1 mb-1">Last Deal</span></p>
+                                                        <p class="mb-0 fs-13 text-dark">Created New Template for Designing Department.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">14:04</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">18 Sep</span>
+                                            <span class="time">12:26</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">18 Sep</span>
+                                            <span class="time ms-2">12:26</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md online">
+                                                    <img alt="avatar" class="br-7" src="../assets/images/users/4.jpg">
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Mark Jhon</p>
+                                                        <p class="mb-0 fs-13 text-dark">Shipment is Out for Delivery.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">12:26</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">03 Sep</span>
+                                            <span class="time">05:37</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">03 Sep</span>
+                                            <span class="time ms-2">05:37</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md offline">
+                                                    <img alt="avatar" class="br-7" src="../assets/images/users/14.jpg">
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Benedict Vallone</p>
+                                                        <p class="mb-0 fs-13 text-dark">Thanking you for Accepting Request.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">05:37</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-time">
+                                            <span class="date">28 Aug</span>
+                                            <span class="time">15:24</span>
+                                        </div>
+                                        <div class="notification-icon">
+                                            <a href="javascript:void(0);"></a>
+                                        </div>
+                                        <div class="notification-time-date mb-2 d-block d-md-none">
+                                            <span class="date">28 Aug</span>
+                                            <span class="time ms-2">15:24</span>
+                                        </div>
+                                        <div class="notification-body">
+                                            <div class="media mt-0">
+                                                <div class="main-avatar avatar-md online">
+                                                    <span class="avatar avatar-md bradius me-3 bg-secondary">IH</span>
+                                                </div>
+                                                <div class="media-body ms-3 d-flex">
+                                                    <div class="">
+                                                        <p class="fs-15 text-dark fw-bold mb-0">Paul Johny</p>
+                                                        <p class="mb-0 fs-13 text-dark">Invited you to a Group.</p>
+                                                    </div>
+                                                    <div class="notify-time">
+                                                        <p class="mb-0 text-muted fs-11">15:24</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="tab-pane" id="side3">
-                            <ul class="task-list timeline-task">
-                                <li class="d-sm-flex mt-4">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">Task Finished<span
-                                                class="text-muted fs-11 mx-2 fw-normal">09 July 2021</span></h6>
-                                        <p class="text-muted fs-12">Adam Berry finished task on<a href="javascript:void(0)"
-                                                class="fw-semibold"> Project Management</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                                <li class="d-sm-flex">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">New Comment<span
-                                                class="text-muted fs-11 mx-2 fw-normal">05 July 2021</span></h6>
-                                        <p class="text-muted fs-12">Victoria commented on Project <a href="javascript:void(0)"
-                                                class="fw-semibold"> AngularJS Template</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                                <li class="d-sm-flex">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">New Comment<span
-                                                class="text-muted fs-11 mx-2 fw-normal">25 June 2021</span></h6>
-                                        <p class="text-muted fs-12">Victoria commented on Project <a href="javascript:void(0)"
-                                                class="fw-semibold"> AngularJS Template</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                                <li class="d-sm-flex">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">Task Overdue<span
-                                                class="text-muted fs-11 mx-2 fw-normal">14 June 2021</span></h6>
-                                        <p class="text-muted mb-0 fs-12">Petey Cruiser finished task <a href="javascript:void(0)"
-                                                class="fw-semibold"> Integrated management</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                                <li class="d-sm-flex">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">Task Overdue<span
-                                                class="text-muted fs-11 mx-2 fw-normal">29 June 2021</span></h6>
-                                        <p class="text-muted mb-0 fs-12">Petey Cruiser finished task <a href="javascript:void(0)"
-                                                class="fw-semibold"> Integrated management</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                                <li class="d-sm-flex">
-                                    <div>
-                                        <i class="task-icon1"></i>
-                                        <h6 class="fw-semibold">Task Finished<span
-                                                class="text-muted fs-11 mx-2 fw-normal">09 July 2021</span></h6>
-                                        <p class="text-muted fs-12">Adam Berry finished task on<a href="javascript:void(0)"
-                                                class="fw-semibold"> Project Management</a></p>
-                                    </div>
-                                    <div class="ms-auto d-md-flex me-3">
-                                        <a href="javascript:void(0)" class="text-muted me-2"><span class="fe fe-edit"></span></a>
-                                        <a href="javascript:void(0)" class="text-muted"><span class="fe fe-trash-2"></span></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="tab-pane" id="side3">hey ciao side 3</div>
+
+
+
                     </div>
                 </div>
             </div>
