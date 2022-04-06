@@ -551,6 +551,7 @@
                             </div>
                         </div>
 
+
                         <!-- PERFORMANCE-SECTION -->
                         <div class="sec-performance">
                             <div class="row align-items-xl-end">
@@ -646,7 +647,7 @@
                         <div class="row">
                             <!-- Single Tab -->
                             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="./01-today-analysis.html" class="border-start border-primary card p-0 overflow-hidden">
+                                <a href="./01-today-analysis.html" class="card p-0 overflow-hidden">
                                     <div class="card-body">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="icon-area text-primary">
@@ -662,7 +663,7 @@
                             </div>
                             <!-- Single Tab -->
                             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="./02-monthly-analysis.html" class="card p-0 overflow-hidden">
+                                <a href="./02-monthly-analysis.html" class="border-start border-primary card p-0 overflow-hidden">
                                     <div class="card-body">
                                         <div class="d-flex gap-3 align-items-center">
                                             <div class="icon-area text-primary">
@@ -709,174 +710,509 @@
                                 </a>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-12">
-                                <div class="section-heading mb-5">
-                                    <h2 class="mb-1 text-primary fw-semibold">Today Analysis</h2>
+                                <div class="section-heading mt-5 mb-7">
+                                    <h2 class="mb-1 text-primary fw-semibold">BackTest <small class="fs-15">January 2009</small></h2>
                                     <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xxl-3 col-xl-4">                    
-                                <div class="card overflow-hidden">
-                                    <div class="card-header">
-                                        <h3 class="card-title fw-semibold text-primary">Today Start</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="candle-image text-center">
-                                            <img src="../assets/images/custom/candle_green.png" width="120" alt="">
 
-                                            <div class="candle-content mb-3">
-                                                <h6 class="mb-1 text-primary">Type</h6>
-                                                <h3 class="mb-1 text-primary fw-bold text-uppercase">Short</h3>
-                                                <p class="text-muted">Valore di Apertura della sessione del mercato</p>
-                                            </div>
+                                <!-- FILTER AREA -->
+                                <div class="filter-area mb-5">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4 class="fs-16 text-primary fw-bold mb-0">filter by period</h4>
 
-                                            <!-- ROW -->
-                                            <div class="row text-primary">
-                                                <!-- Single Column -->
-                                                <div class="col-6">
-                                                    <div class="single-item">
-                                                        <h5 class="mb-1 text-uppercase">Take Profit</h5>
-                                                        <h3 class="mb-2 number-font">4153.29</h2>
-                                                        <p class="text-muted">(+6.25 punti (0,6%)</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Single Column -->
-                                                <div class="col-6">
-                                                    <div class="single-item">
-                                                        <h5 class="mb-1 text-uppercase">Stop Loss</h5>
-                                                        <h3 class="mb-2 number-font">4184.63</h3>
-                                                        <p class="text-muted">(+6.25 punti (0,6%)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="form-group mb-0">
+                                            <select name="years" class="form-control form-select select2" data-bs-placeholder="Years">
+                                                <option value="#">2009</option>
+                                                <option value="#">2010</option>
+                                                <option value="#">2011</option>
+                                                <option value="#">2012</option>
+                                                <option value="#">2013</option>
+                                                <option value="#">2014</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <select name="month" class="form-control form-select select2" data-bs-placeholder="Month">
+                                                <option value="#">January</option>
+                                                <option value="#">February</option>
+                                                <option value="#">March</option>
+                                                <option value="#">April</option>
+                                                <option value="#">May</option>
+                                                <option value="#">June</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xxl-9 col-xl-8">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title fw-semibold text-primary">Today Start</h3>
+                                    <div class="card-header gap-3">
+                                        <div class="icon-area">
+                                            <img src="../assets/images/pngs/calendar-icon.png" alt="">
+                                        </div>
+                                        <div class="content-area">
+                                            <h3 class="card-title fw-bold text-primary">January 2008 - February 2022</h3>
+                                            <p class="mb-0 fs-12 text-muted">Analisi con la performance migliore</p>
+                                        </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="d-flex mx-auto text-center justify-content-center mb-4">
-                                            <div class="d-flex text-center justify-content-center me-3"><span
-                                                    class="dot-label bg-primary my-auto"></span>Total Sales</div>
+                                        <div class="d-flex gap-3 flex-wrap mx-auto text-center justify-content-center mb-4">
                                             <div class="d-flex text-center justify-content-center"><span
-                                                    class="dot-label bg-secondary my-auto"></span>Total Orders</div>
+                                                    class="dot-label bg-primary my-auto"></span>
+                                                RowSerie
+                                            </div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                class="dot-label bg-secondary my-auto"></span>
+                                                S+T day
+                                            </div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                class="dot-label bg-success my-auto"></span>
+                                                End of day
+                                            </div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                class="dot-label bg-danger my-auto"></span>
+                                                STL+TKP
+                                            </div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                class="dot-label bg-info my-auto"></span>
+                                                OnlySTL
+                                            </div>
+                                            <div class="d-flex text-center justify-content-center"><span
+                                                class="dot-label bg-success my-auto"></span>
+                                                OnlyTKP
+                                            </div>
                                         </div>
-                                        <div class="chartjs-wrapper-demo">
-                                            <canvas id="today_analysis_transactions" class="chart-dropshadow"></canvas>
-                                        </div>
+                                        <div id="chart-spline" class="chartsh"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xxl-3 col-xl-4 col-lg-7">    
-                                <div class="card overflow-hidden text-center text-primary">
-                                    <div class="card-header">
-                                        <h3 class="card-title fw-semibold">Actual Expected Value</h3>
+
+                        <!-- Row -->
+                        <div class="row row-sm">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header gap-3">
+                                        <div class="icon-area">
+                                            <img src="../assets/images/pngs/calendar-icon.png" alt="">
+                                        </div>
+                                        <div class="content-area">
+                                            <h3 class="card-title fw-bold text-primary">January 2008 - February 2022</h3>
+                                            <p class="mb-0 fs-12 text-muted">Analisi con la performance migliore</p>
+                                        </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h4><span class="fw-bold">4,034.11</span> <small class="d-block">Minimum</small></h4>
-                                            </div>
-                                            <div class="col-6">
-                                                <h4><span class="fw-bold">4,235.11</span> <small class="d-block">Maximum</small></h4>
-                                            </div>
+                                        <div class="table-responsive mb-7">
+                                            <table id="example2" class="table table-bordered text-nowrap border-bottom">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="border-bottom-0">Date</th>
+                                                        <th class="border-bottom-0">Open</th>
+                                                        <th class="border-bottom-0">Close</th>
+                                                        <th class="border-bottom-0">High</th>
+                                                        <th class="border-bottom-0">Low</th>
+                                                        <th class="border-bottom-0">Var</th>
+                                                        <th class="border-bottom-0">Var%</th>
+                                                        <th class="border-bottom-0">Close Var</th>
+                                                        <th class="border-bottom-0">STL+TKP</th>
+                                                        <th class="border-bottom-0">STL+TKP</th>
+                                                        <th class="border-bottom-0">Onlv</th>
+                                                        <th class="border-bottom-0">Onlv</th>
+                                                        <th class="border-bottom-0">Onlv</th>
+                                                        <th class="border-bottom-0">Onlv</th>
+                                                        <th class="border-bottom-0">Endof</th>
+                                                        <th class="border-bottom-0">Choose TK</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-01-03</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td>4778.14</td>
+                                                        <td class="text-success">11.96</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td>Buy</td>
+                                                        <td class="text-danger">18<sub>.42</sub></td>
+                                                        <td class="text-success">18<sub>.42</sub></td>
+                                                        <td>-0.9 || 2.25</td>
+                                                        <td>-0.9</td>
+                                                        <td>2.25</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
+                                        
 
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="table-responsive" avs-scroll style="height: 350px;">
-                                                    <table class="table text-nowrap text-md-nowrap mb-0">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>
-                                                                    <h4><span class="text-uppercase text-primary fw-bold">Bellow</span> <small class="d-block">Opening</small></h4>
-                                                                </th>
-                                                                <th>Step</th>
-                                                                <th>
-                                                                    <h4><span class="text-uppercase text-primary fw-bold">Above</span> <small class="d-block">Opening</small></h4>
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>1</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>2</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>3</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>4</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>5</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>6</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>7</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>8</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>9</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-danger">-0.51%</td>
-                                                                <td>10</td>
-                                                                <td class="text-success">+0.34%</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-8">                                                
+                                                <div class="card card-body border p-lg-6 rounded-3">
+                                                    <div class="row gy-4 text-center">
+                                                        <!-- Column -->
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <h4 class="mb-2 text-primary fw-bold">StopLoss + Take Profit</h4>
+                                                            <h3 class="mb-2 fw-bold text-warning">-154.<span class="fs-15">460</span></h3>
+                                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                                        </div>
+                                                        <!-- Column -->
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <h4 class="mb-2 text-primary fw-bold">Only StopLoss</h4>
+                                                            <h3 class="mb-2 fw-bold text-warning">-289.<span class="fs-15">471</span></h3>
+                                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                                        </div>
+                                                        <!-- Column -->
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <h4 class="mb-2 text-primary fw-bold">Only TakeProfit</h4>
+                                                            <h3 class="mb-2 fw-bold text-warning">-153.<span class="fs-15">700</span></h3>
+                                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                                        </div>
+                                                        <!-- Column -->
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <h4 class="mb-2 text-primary fw-bold">End of Day</h4>
+                                                            <h3 class="mb-2 fw-bold text-warning">-291.<span class="fs-15">380</span></h3>
+                                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                                        </div>
+                                                    </div>  
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-9 col-xl-8 col-lg-5">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">line chart</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div id="morrisBar2" class="chartsh"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- End Row -->
                     </div>
                     <!-- CONTAINER END -->
                 </div>
@@ -1514,10 +1850,20 @@
     <!-- INTERNAL SELECT2 JS -->
     <script src="../assets/plugins/select2/select2.full.min.js"></script>
 
-    <!-- INTERNAL Data tables js-->
+    <!-- DATA TABLE JS-->
     <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
     <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+    <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+    <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
     <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+    <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+    <script src="../assets/js/table-data.js"></script>
 
     <!-- INTERNAL APEXCHART JS -->
     <script src="../assets/js/apexcharts.js"></script>
@@ -1535,6 +1881,10 @@
     <script src="../assets/plugins/flot/jquery.flot.fillbetween.js"></script>
     <script src="../assets/plugins/flot/chart.flot.sampledata.js"></script>
     <script src="../assets/plugins/flot/dashboard.sampledata.js"></script>
+    <script src="../assets/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="../assets/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="../assets/js/flot.js"></script>
+
 
     <!-- INTERNAL Vector js -->
     <script src="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>

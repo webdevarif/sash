@@ -5,7 +5,8 @@
 
     &.stickyClass {
       position: sticky;
-      top: 50px;
+      top: 0px;
+      z-index: 10;
       -webkit-animation-name: header_animation;
       animation-name: header_animation;
       -webkit-animation-duration: 0.4s;
@@ -18,15 +19,28 @@
       .list-item-icon {
         display: none;
       }
-
     }
   }
 
   &+.jumps-prevent {
     padding: 0 !important;
   }
+  
+  @media (max-width: 991px){
+    .spx-area--trading{
+      display: none;
+    }
+  }
+    
+  p{
+    color:#ebd9b7 !important;
+  }
+  .card{/*color correct card*/
+    background-color: #5b3d36 !important;
+    border:1px solid #381a14 !important;
+    box-shadow: 0 14px 26px -12px rgba(92,60,55,.42),0 4px 23px 0px rgba(0,0,0,.12),0 8px 10px -5px rgba(92,60,55,.2);
+  }
 }
-
 
 
 @-webkit-keyframes header_animation {

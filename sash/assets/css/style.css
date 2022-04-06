@@ -41164,7 +41164,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 #global-loader {
     position: fixed;
     z-index: 50000;
-    background: rgb(255, 255, 255);
+    background: #ebd9b7;
     left: 0;
     top: 0;
     right: 0;
@@ -45422,6 +45422,24 @@ table.table-bordered.dataTable thead tr:first-child td {
 
 .shopping-cart .dropdown-menu .header-dropdown-list.message-menu .dropdown-item .cart-trash {
     z-index: 1;
+}
+
+.blur-item {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    opacity: 0.8;
+    pointer-events: none;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
 }
 
 .file-sm {
@@ -72112,7 +72130,8 @@ textarea.form-control {
 
 .spx-area.sticky.stickyClass {
     position: sticky;
-    top: 50px;
+    top: 0px;
+    z-index: 10;
     -webkit-animation-name: header_animation;
     animation-name: header_animation;
     -webkit-animation-duration: 0.4s;
@@ -72129,6 +72148,23 @@ textarea.form-control {
 
 .spx-area+.jumps-prevent {
     padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+    .spx-area .spx-area--trading {
+        display: none;
+    }
+}
+
+.spx-area p {
+    color: #ebd9b7 !important;
+}
+
+.spx-area .card {
+    /*color correct card*/
+    background-color: #5b3d36 !important;
+    border: 1px solid #381a14 !important;
+    box-shadow: 0 14px 26px -12px rgba(92, 60, 55, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(92, 60, 55, 0.2);
 }
 
 @-webkit-keyframes header_animation {

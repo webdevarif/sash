@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="app sidebar-mini ltr light-mode">
+<body class="app sidebar-mini ltr light-mode sidenav-toggled">
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
@@ -48,7 +48,7 @@
         <div class="page-main">
 
             <!-- app-Header -->
-            <div class="app-header header sticky">
+            <div class="app-header header position-relative bg-transparent">
                 <div class="container-fluid main-container">
                     <div class="d-flex">
                         <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
@@ -426,731 +426,172 @@
                     <!-- CONTAINER -->
                     <div class="main-container container-fluid">
 
-                        <!-- HEADER SPX STICKY -->
-                        <div class="spx-area sticky pt-6 mb-6">
-                            <div class="mb-0 py-3 card card-body bg-primary text-white">
-                                <div class="row align-items-center gy-3">
-                                    <div class="col-md">
-                                        <div class="d-flex mb-3 gap-3 align-items-center">
-                                            <div class="icon-area">
-                                                <img src="../assets/images/custom/sp-logo.png" width="50" alt="" />
-                                            </div>
-                                            <div>                                                            
-                                                <h3 class="fs-16 mb-2 lh-sm">SPX - Standard & Poor 500 [S&P 500] <br>4,189,82</h3>
-                                                <h6 class="fs-12 mb-0">+20,67 (0,50%) <span class="text-success mx-1 fa fa-long-arrow-up"></span> oggi</h6>
-                                            </div>
-                                        </div>
+                        <!-- Heor-area -->
+                        <section class="hero-area text-center py-7">
+                            <div class="hero-logo mb-5">
+                                <img src="../assets/images/pngs/logo-home.png" alt="">
+                            </div>
+                        </section>
 
-                                        <ul class="list-inline d-inline-flex gap-1 gap-xxl-3 flex-wrap flex-md-nowrap">
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">4,173.11</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">Apertua</p>
-                                            </li>
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">4,828.11</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">Chiusura</p>
-                                            </li>
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">4,998.11</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">Chiusura Prec..</p>
-                                            </li>
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">4,235.11</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">Massimo</p>
-                                            </li>
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">4,034.11</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">Minimo</p>
-                                            </li>
-                                            <!-- Single Item -->
-                                            <li class="list-inline-item">
-                                                <h6 class="mb-0 number-font">99.98</h6>
-                                                <p class="fs-10 text-nowrap mb-0 text-white-50">% Open</p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <ul class="d-inline-flex list-spx-trading gap-xxl-3 flex-wrap flex-md-nowrap">
-                                            <!-- List Item -->
-                                            <li class="list-inline-item text-center">
-                                                <div class="list-item-icon mb-3">
-                                                    <img src="../assets/images/custom/tradingsession.png" width="40" alt="">
-                                                </div>
-                                                <p class="mb-1 fs-10 text-white-50 text-wh">Trading Session</p>
-                                                <div class="remain-time">
-                                                    <h4 class="mb-1 fs-16">-1h <small>44m</small></h4>
-                                                    <h6>10 <small>sec</small></h6>
-                                                </div>
-                                            </li>
-                                            <li class="list-inline-item vr"></li>
-                                            <!-- List Item -->
-                                            <li class="list-inline-item text-center">
-                                                <div class="list-item-icon mb-3">
-                                                    <img src="../assets/images/custom/localtime.png" width="40" alt="">
-                                                </div>
-                                                <p class="mb-1 fs-10 text-white-50 text-wh">Local Time</p>
-                                                <div class="remain-time">
-                                                    <h4 class="fs-16 mb-1">15 <small>FEB</small></h4>
-                                                    <!-- <h6 class="mb-1">Monday</h6> -->
-                                                    <h6>10:19 <small>pm</small></h6>
-                                                </div>
-                                            </li>
-                                            <li class="list-inline-item vr"></li>
-                                            <!-- List Item -->
-                                            <li class="list-inline-item text-center">
-                                                <div class="list-item-icon mb-3">
-                                                    <img src="../assets/images/custom/exchangetime.png" width="40" alt="">
-                                                </div>
-                                                <p class="mb-1 fs-10 text-white-50 text-wh">Exchange Time</p>
-                                                <div class="remain-time">
-                                                    <h4 class="mb-1 fs-16">CLOSED</h4>
-                                                    <h6>10:24:31 <small>pm</small></h6>
-                                                </div>
-                                            </li>
-                                            <li class="list-inline-item vr"></li>
-                                            <!-- List Item -->
-                                            <li class="list-inline-item text-center">
-                                                <div class="list-item-icon mb-3">
-                                                    <img src="../assets/images/custom/profit-loss.png" width="40" alt="">
-                                                </div>
-                                                <p class="mb-1 fs-10 text-white-50 text-wh">Profit/Loss(P/L)</p>
-                                                <div class="remain-time">
-                                                    <h4 class="mb-1 fs-16">98 Punti</h4>
-                                                    <h6>(Cash)</h6>
-                                                </div>
-                                            </li>
-                                            <li class="list-inline-item vr"></li>
-                                            <!-- List Item -->
-                                            <li class="list-inline-item text-center">
-                                                <div class="list-item-icon mb-3">
-                                                    <img src="../assets/images/custom/trade.png" width="40" alt="">
-                                                </div>
-                                                <p class="mb-1 fs-10 text-white-50 text-wh">Trade</p>
-                                                <div class="remain-time">
-                                                    <h4 class="mb-1 fs-16">Finished</h4>
-                                                </div>
-                                            </li>
-                                        </ul>
-
+                        <!-- ABOUT AREA -->
+                        <section class="about-area py-7">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-heading mb-7 text-primary text-center">
+                                        <h5 class="mb-2 text-uppercase">Strategy</h5>
+                                        <h2 class="fs-1 fw-bold">La miglior strategia per ogni Serie</h2>
+                                        <p class="fs-16">15 anni di analisi concertati in bla bla bla</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- SPX STATAGY AREA -->
-                        <div class="spx-strategy-area mb-6">
-                            <div class="spx-strategy-heading">
-                                <h2 class="mb-3 fs-1 fw-bold text-primary">SPX-cdt4 <small class="fs-16 text-uppercase">Strategy</small></h2>
-                                <h4>La potenza della <a class="link-primary text-decoration-underline" href="#">statistica</a> applicata al trading</h4>
-                            </div>
-                        </div>
-
-
-                        <!-- PERFORMANCE-SECTION -->
-                        <div class="sec-performance">
-                            <div class="row align-items-end">
-                                <div class="col-xxl-9 col-xl-8 col-lg-7">
-
-                                    <ul class="d-inline-flex gap-3 align-items-center mb-6">
-                                        <li class="list-inline-item">
-                                            <span class="fs-2 text-primary mdi mdi-alert-circle-outline"></span>
-                                        </li>
-                                        <li class="list-inline-item vr w-1 bg-primary"></li>
-                                        <li class="list-inline-item">
-                                            
-                                            <div class="form-group m-0">
-                                                <label class="custom-switch cursor-pointer form-switch me-5">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                                    <span class="custom-switch-indicator custom-switch-indicator-md"></span>
-                                                    <span class="custom-switch-description">Follow it</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <div class="sec-performance-list mb-7">
-                                        <div class="row g-4">
-                                            <!-- Single Item -->
-                                            <div class="col-lg-4">
-                                                <div class="sec-performance-item d-flex gap-3 align-items-center">
-                                                    <div class="icon-area avatar avatar-lg text-primary fs-3 align-items-center justify-content-center brround">
-                                                        <span class="mdi mdi-account-box-outline"></span>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <h5 class="mb-1 fw-semibold text-primary">CDT-4 Performance</h5>
-                                                        <p class="mb-0">12 Pti(+0.07%)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-lg-4">
-                                                <div class="sec-performance-item d-flex gap-3 align-items-center">
-                                                    <div class="icon-area avatar avatar-lg text-primary fs-3 align-items-center justify-content-center brround">
-                                                        <span class="mdi mdi-account-box-outline"></span>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <h5 class="mb-1 fw-semibold text-primary">SPX Performance</h5>
-                                                        <p class="mb-0">24 Pti(+0.07%)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Single Item -->
-                                            <div class="col-lg-4">
-                                                <div class="sec-performance-item d-flex gap-3 align-items-center">
-                                                    <div class="icon-area avatar avatar-lg text-primary fs-3 align-items-center justify-content-center brround">
-                                                        <span class="mdi mdi-account-box-outline"></span>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <h5 class="mb-1 fw-semibold text-primary">SPX Performance</h5>
-                                                        <p class="mb-0">24 Pti(+0.07%)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="row gy-4 justify-content-center align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="about-content">
+                                        <p>On Algoseries the "Strategies" are "Methods" of trading applied to a historical series of data.</p>
+                                        <p>Since each financial instrument has a different statistical behaviour nature, the methods allow us to verify how much a given type of operation is profitable when applied to a historical series.</p>
+                                        <p>Our researchers and mathematicians, applying physical, fractal and quantum principles, build new methods to detect statistically favorable backtest results while our proprietary ARCHIMEDE algorithm uses these methods to analyze hundreds of time series and offer you the best statistically results in terms of Take Profit, Stop loss, max growth, max drawdown.</p>
+                                        <p class="mb-0">Select your Strategy:</p>
                                     </div>
-
-                                    <div class="sec-performance-desc">
-                                        <h5 class="mb-4"><span class="text-primary">Dashboard / </span> <span class="font-italic">SPX-cdt-4 Strategy</span></h5>
-                                        <div class="card card-body">
-                                            <h4 class="text-primary fw-semibold mb-5">Continous Day Trading with 4 starting cases on SPX Standard & Poor 500</h4>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis tempora doloremque molestiae mollitia, iste neque possimus voluptatum blanditiis assumenda tempore enim cumque quis odit?</p>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio maiores possimus nemo in architecto temporibus quam, totam, quasi beatae distinctio, sed quisquam? Voluptate, explicabo modi placeat ad officia nostrum consectetur, cupiditate quidem a nemo quia aspernatur ut? Nesciunt recusandae hic voluptatibus! Earum debitis odit corporis laborum error fugiat temporibus esse?</p>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio maiores possimus nemo in officia nostrum consectetur, cupiditate quidem a nemo quia aspernatur ut? Nesciunt recusandae hic voluptatibus! Earum debitis odit corporis laborum error fugiat temporibus esse?</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus exercitationem eaque doloremque adipisci id architecto. Natus nam pariatur quis nostrum laudantium! Nulla neque explicabo aliquam minus non dolores. Maxime beatae eum minima a? Optio, dolore.</p>
-                                        </div>
-                                    </div>
-
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-5">
-                                    <div class="sec-performance-info">
-                                        <div class="card card-body p-lg-5">
-                                            <div class="mb-3">
-                                                <img src="../assets/images/custom/howwork.png" alt="">
-                                            </div>
-                                            <div class="desc-content text-center">
-                                                <h3 class="text-primary mb-3 fw-bold">How Work</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque aut quasi.</p>
-                                                <a href="#" class="btn btn-primary px-5 rounded-pill font-italic text-decoration-underline">Read More</a>
-                                            </div>
-                                        </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <img src="../assets/images/pngs/about-banner.png" class="img-fluid w-100" alt="">
+                                </div>
+                            </div> 
+                        </section>
+
+                        <!-- PRICING AREA -->
+                        <section class="pricing-area py-7">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-heading mb-7 text-primary text-center">
+                                        <h5 class="mb-2 text-uppercase">Strategy</h5>
+                                        <h2 class="fs-3 fw-bold">Seleziona La strategia </h2>
+                                        <p class="fs-16">La potenza della <i class="text-warning">statistica</i> applicata al trading</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <!-- Single Tab -->
-                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="./01-today-analysis.html" class="card p-0 overflow-hidden">
-                                    <div class="card-body">
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div class="icon-area text-primary">
-                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <h2 class="mb-1 text-primary fw-semibold">Today</h2>
-                                                <h6 class="mb-0">Analytics</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Tab -->
-                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="./02-monthly-analysis.html" class="border-start border-primary card p-0 overflow-hidden">
-                                    <div class="card-body">
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div class="icon-area text-primary">
-                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <h2 class="mb-1 text-primary fw-semibold">Month</h2>
-                                                <h6 class="mb-0">Analytics</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Tab -->
-                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="#tab--back-test" data-bs-toggle="tab" class="card p-0 overflow-hidden">
-                                    <div class="card-body">
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div class="icon-area text-primary">
-                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <h2 class="mb-1 text-primary fw-semibold">Back</h2>
-                                                <h6 class="mb-0">Test</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Single Tab -->
-                            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                                <a href="#tab--coming-soon" data-bs-toggle="tab" class="card p-0 overflow-hidden">
-                                    <div class="card-body">
-                                        <div class="d-flex gap-3 align-items-center">
-                                            <div class="icon-area text-primary">
-                                                <img src="https://via.placeholder.com/100" width="40" alt="">
-                                            </div>
-                                            <div class="item-content">
-                                                <h2 class="mb-1 text-primary fw-semibold">Coming</h2>
-                                                <h6 class="mb-0">soon(trading journal)</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-heading mb-5">
-                                    <h2 class="mb-1 text-primary fw-semibold">BackTest <small class="fs-15">15 Years</small></h2>
-                                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title fw-bold text-primary">March 2022</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="d-flex mx-auto text-center justify-content-center mb-4">
-                                            <div class="d-flex text-center justify-content-center me-3"><span
-                                                    class="dot-label bg-primary my-auto"></span>Total Sales</div>
-                                            <div class="d-flex text-center justify-content-center"><span
-                                                    class="dot-label bg-secondary my-auto"></span>Total Orders</div>
-                                        </div>
-                                        <div id="chart-spline" class="chartsh"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="py-7">
                             <div class="row justify-content-center">
-                                <div class="col-xxl-10">
-                                    <div class="row gy-4 text-center">
-                                        <!-- Column -->
-                                        <div class="col-sm-6 col-lg-3">
-                                            <h4 class="mb-2 text-primary fw-bold">StopLoss + Take Profit</h4>
-                                            <h3 class="mb-2 fw-bold text-warning">-154.<span class="fs-15">460</span></h3>
-                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                <div class="col-xl-8 col-lg-10">
+                                    <div class="row gy-4">
+                                        <!-- Single Pricing -->
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="single-item text-center card p-sm-5 card-body border">
+                                                <div class="single-item--header text-primary">
+                                                    <h5 class="fw-semibold">Cod: SPX-CDT4</h5>
+                                                    <h2 class="fs-3 fw-bold">Serie SP500</h2>
+                                                </div>
+                                                <div class="single-item--banner mb-5">
+                                                    <img src="../assets/images/custom/howwork.png" alt="">
+                                                </div>
+                                                <div class="single-item--content mb-5">
+                                                    <h5 class="text-muted">Continuos day trading <br>with 4 starting cases</h5>
+                                                </div>
+                                                <div class="single-item--table mb-4">
+                                                    <div class="table-cover-area">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">-100 units</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="single-item--button">
+                                                    <button class="btn btn-primary px-6 btn-pill">Subscribe</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- Column -->
-                                        <div class="col-sm-6 col-lg-3">
-                                            <h4 class="mb-2 text-primary fw-bold">Only StopLoss</h4>
-                                            <h3 class="mb-2 fw-bold text-warning">-289.<span class="fs-15">471</span></h3>
-                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
+                                        <!-- Single Pricing // Add Class ==> blur-item -->
+                                        <div class="col-lg-4 col-md-6 blur-item">
+                                            <div class="single-item text-center card p-sm-5 card-body border">
+                                                <div class="single-item--header text-primary">
+                                                    <h5 class="fw-semibold">Cod: SPX-CDT4</h5>
+                                                    <h2 class="fs-3 fw-bold">Serie SP500</h2>
+                                                </div>
+                                                <div class="single-item--banner mb-5">
+                                                    <img src="../assets/images/custom/howwork.png" alt="">
+                                                </div>
+                                                <div class="single-item--content mb-5">
+                                                    <h5 class="text-muted">Continuos day trading <br>with 4 starting cases</h5>
+                                                </div>
+                                                <div class="single-item--table mb-4">
+                                                    <div class="table-cover-area">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">-100 units</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="single-item--button">
+                                                    <button class="btn btn-primary px-6 btn-pill">Subscribe</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- Column -->
-                                        <div class="col-sm-6 col-lg-3">
-                                            <h4 class="mb-2 text-primary fw-bold">Only TakeProfit</h4>
-                                            <h3 class="mb-2 fw-bold text-warning">-153.<span class="fs-15">700</span></h3>
-                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
-                                        </div>
-                                        <!-- Column -->
-                                        <div class="col-sm-6 col-lg-3">
-                                            <h4 class="mb-2 text-primary fw-bold">End of Day</h4>
-                                            <h3 class="mb-2 fw-bold text-warning">-291.<span class="fs-15">380</span></h3>
-                                            <h5 class="fw-semibold text-primary">Max drawdown</h5>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>      
-
-                        <!-- Row -->
-                        <div class="row row-sm">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title fw-bold text-primary"><span class="fa fa-clock"></span> January 2008 - February 2022</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table id="example2" class="table table-bordered text-nowrap border-bottom">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="border-bottom-0">Date</th>
-                                                        <th class="border-bottom-0">Open</th>
-                                                        <th class="border-bottom-0">Close</th>
-                                                        <th class="border-bottom-0">High</th>
-                                                        <th class="border-bottom-0">Low</th>
-                                                        <th class="border-bottom-0">Var</th>
-                                                        <th class="border-bottom-0">Var%</th>
-                                                        <th class="border-bottom-0">Close Var</th>
-                                                        <th class="border-bottom-0">STL+TKP</th>
-                                                        <th class="border-bottom-0">STL+TKP</th>
-                                                        <th class="border-bottom-0">Onlv</th>
-                                                        <th class="border-bottom-0">Onlv</th>
-                                                        <th class="border-bottom-0">Onlv</th>
-                                                        <th class="border-bottom-0">Onlv</th>
-                                                        <th class="border-bottom-0">Endof</th>
-                                                        <th class="border-bottom-0">Choose TK</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>22-01-03</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td>4778.14</td>
-                                                        <td class="text-success">11.96</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>$320,800</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td>Buy</td>
-                                                        <td class="text-danger">18<sub>.42</sub></td>
-                                                        <td class="text-success">18<sub>.42</sub></td>
-                                                        <td>-0.9 || 2.25</td>
-                                                        <td>-0.9</td>
-                                                        <td>2.25</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <!-- Single Pricing // Add Class ==> blur-item -->
+                                        <div class="col-lg-4 col-md-6 blur-item">
+                                            <div class="single-item text-center card p-sm-5 card-body border">
+                                                <div class="single-item--header text-primary">
+                                                    <h5 class="fw-semibold">Cod: SPX-CDT4</h5>
+                                                    <h2 class="fs-3 fw-bold">Serie SP500</h2>
+                                                </div>
+                                                <div class="single-item--banner mb-5">
+                                                    <img src="../assets/images/custom/howwork.png" alt="">
+                                                </div>
+                                                <div class="single-item--content mb-5">
+                                                    <h5 class="text-muted">Continuos day trading <br>with 4 starting cases</h5>
+                                                </div>
+                                                <div class="single-item--table mb-4">
+                                                    <div class="table-cover-area">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">+1234 units</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-primary fw-bold">method</td>
+                                                                    <td class="text-warning fw-semibold">-100 units</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="single-item--button">
+                                                    <button class="btn btn-primary px-6 btn-pill">Subscribe</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- End Row -->
+                        </section>
                     </div>
                     <!-- CONTAINER END -->
                 </div>
@@ -1788,20 +1229,10 @@
     <!-- INTERNAL SELECT2 JS -->
     <script src="../assets/plugins/select2/select2.full.min.js"></script>
 
-    <!-- DATA TABLE JS-->
+    <!-- INTERNAL Data tables js-->
     <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
     <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
     <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-    <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-    <script src="../assets/js/table-data.js"></script>
 
     <!-- INTERNAL APEXCHART JS -->
     <script src="../assets/js/apexcharts.js"></script>
@@ -1819,10 +1250,6 @@
     <script src="../assets/plugins/flot/jquery.flot.fillbetween.js"></script>
     <script src="../assets/plugins/flot/chart.flot.sampledata.js"></script>
     <script src="../assets/plugins/flot/dashboard.sampledata.js"></script>
-    <script src="../assets/plugins/flot/jquery.flot.pie.js"></script>
-    <script src="../assets/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="../assets/js/flot.js"></script>
-
 
     <!-- INTERNAL Vector js -->
     <script src="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
