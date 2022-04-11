@@ -595,3 +595,55 @@ $(document).on("click", ".rtl #slide-right", function () {
         e.style.display = '';
     })
 });
+// ______________ICON-OVERLAY JS START
+
+
+
+function iconoverlay() {
+
+
+
+    $(document).on('click', ".app-content", function (event) {
+
+        $('body').removeClass('sidenav-toggled-open');
+
+    });
+
+
+
+    //Mobile menu 
+
+    var alterClass = function () {
+
+        var ww = document.body.clientWidth;
+
+        if (ww < 992) {
+
+            $('body').removeClass('sidenav-toggled');
+
+        } else if (ww >= 991  && !(document.querySelector('.horizontal') !== null)) {
+
+            $('body').addClass('sidenav-toggled');
+
+        };
+
+    };
+
+    $(window).resize(function () {
+
+        alterClass();
+
+    });
+
+    //Fire it when the page first loads:
+
+    alterClass();
+
+
+
+}
+
+
+
+// ______________ICON-OVERLAY JS END
+

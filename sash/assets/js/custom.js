@@ -427,8 +427,11 @@
 	// }
 
 	// ***** Icon Overlay ***** //
-	// $('body').addClass('icon-overlay');
-	// $('body').addClass('sidenav-toggled');
+	 $('body').addClass('icon-overlay');
+	 $('body').addClass('sidenav-toggled');
+     
+     iconoverlay(); 
+
 
 	// ***** closed-leftmenu ***** //
 	// $('body').addClass('closed-leftmenu');
